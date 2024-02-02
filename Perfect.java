@@ -17,7 +17,7 @@ public class Perfect {
 			}
 	//check if the the number is equal to the sum of the divisors
 	if (num == sum) {
-		System.out.print( num + " is a perfect number since = ");
+		System.out.print( num + " is a perfect number since " + num + " = ");
 			for(int a=0; a < i - 1 ;a++)
 			{
 				System.out.print(arr[a] + " + ");
@@ -30,3 +30,4 @@ public class Perfect {
 		}
 		
 	}
+}
