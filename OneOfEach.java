@@ -1,50 +1,23 @@
 public class OneOfEach {
     public static void main(String[] args) {
-       boolean s = true;
-       int n = 0;
-       double t = 0;
+        boolean boy = false;
+        boolean girl = false;
+        int num = 0;
 
+        while (!(boy && girl)) {
+            double baby = Math.random();
 
-
-            while (s == true) {
-             t =  Math.random();
-                if (t>0.5){
-                    s = true;
-                    System.out.println("b ");
-                    n++;
-                
-                }
-                if (t<=0.5){
-                    s = false;
-                    System.out.println("g ");
-                    n++;
-                }
-                t =  Math.random();
-            }
-                while (s == false) {
-
-                    System.out.println("g ");
-                    n++;
-                    if (t>0.5){
-                        s = true;
-                        System.out.println("b ");
-                        n++;
-                       break;
-                }
-                break;
+            if (baby > 0.5) {
+                boy = true;
+                System.out.print("b ");
+            } else {
+                girl = true;
+                System.out.print("g ");
             }
 
+            num++;
+        }
 
-/*if (s == true) {
-    System.out.println("b ");
-    n++;
-else {
-    System.out.println("b ");
-    n++;
-}
-}*/
-System.out.println("You made it... and you now have " + n + " cildren.");
-
-    
-}
+        System.out.println("You made it... and you now have " + num + " children.");
+    }
 }
